@@ -1,0 +1,85 @@
+.curso-detalle-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.header h3 {
+    font-size: 18px;
+    color: #555;
+}
+
+.tabla-container {
+    overflow-x: auto;
+}
+
+.tabla-alumnos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabla-alumnos thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.tabla-alumnos th, .tabla-alumnos td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-alumnos tr:hover {
+    background-color: #f1f1f1;
+}
+
+.tabla-alumnos button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tabla-alumnos button:hover {
+    opacity: 0.8;
+}
+
+.button-create {
+    background-color: #083ff6;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.button-create:hover {
+    background-color: #218838;
+}
+
+input[type="date"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

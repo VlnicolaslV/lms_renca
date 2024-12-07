@@ -1,0 +1,63 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  width: 350px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los inputs */
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #5cb85c; /* Color verde al enfocar */
+}
+
+/* Estilos para el botón */
+.btn {
+  background-color: #5cb85c; /* Color verde */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Estilos para el mensaje de error */
+.error {
+  color: #d9534f; /* Color rojo */
+  margin-bottom: 15px;
+  text-align: center;
+}
+

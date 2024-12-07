@@ -1,0 +1,14 @@
+/* verTareas.css */
+.ver-tareas-container {
+    margin: 20px;
+}
+
+.tareas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarea-card {
+    width: 300px;
+}

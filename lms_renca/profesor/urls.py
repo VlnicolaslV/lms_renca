@@ -1,0 +1,40 @@
+from django.urls import path
+from .views import (
+    obtener_curso_asignatura,
+    obtener_estudiantes,
+    obtener_tareas_view,
+    crear_tarea_view,
+    calificar_tarea,
+    obtener_calificaciones,
+    obtener_foros_view,
+    crear_foro_view,
+    comentar_foro_view,
+    obtener_comentarios_view,
+    obtener_asistencias_view,
+    tomar_asistencia_view,
+    obtener_recursos_view,
+    subir_recurso_view,
+    ver_resultados_asistencia,
+    ver_resultados_calificaciones,
+    obtener_cursos_profesor_view
+)
+ 
+urlpatterns = [
+    path('cursos/', obtener_cursos_profesor_view, name='obtener_cursos_profesor'),
+    path('curso-asignatura/<int:id_curso_asignatura>/', obtener_curso_asignatura, name='obtener_curso_asignatura'),
+    path('curso-asignatura/<int:id_curso_asignatura>/estudiantes/', obtener_estudiantes, name='obtener_estudiantes'),
+    path('curso-asignatura/<int:id_curso_asignatura>/tareas/', obtener_tareas_view, name='obtener_tareas'),
+    path('curso-asignatura/<int:id_curso_asignatura>/crear-tarea/', crear_tarea_view, name='crear_tarea'),
+    path('tarea/<int:id_tarea>/calificar/<int:id_estudiante>/', calificar_tarea, name='calificar_tarea'),
+    path('tarea/<int:id_tarea>/calificaciones/', obtener_calificaciones, name='obtener_calificaciones'),
+    path('curso-asignatura/<int:id_curso_asignatura>/foros/', obtener_foros_view, name='obtener_foros'),
+    path('curso-asignatura/<int:id_curso_asignatura>/crear-foro/', crear_foro_view, name='crear_foro'),
+    path('curso-asignatura/<int:id_foro>/comentar/', comentar_foro_view, name='comentar_foro'),
+    path('curso-asignatura/<int:id_foro>/comentarios/', obtener_comentarios_view, name='obtener_comentarios'),
+    path('curso-asignatura/<int:id_curso_asignatura>/asistencias/', obtener_asistencias_view, name='obtener_asistencias'),
+    path('curso-asignatura/<int:id_curso_asignatura>/asistencia/<str:rut_estudiante>/', tomar_asistencia_view, name='tomar_asistencia'),
+    path('curso-asignatura/<int:id_curso_asignatura>/recursos/', obtener_recursos_view, name='obtener_recursos'),
+    path('curso-asignatura/<int:id_curso_asignatura>/subir-recurso/', subir_recurso_view, name='subir_recurso'),
+    path('curso-asignatura/<int:id_curso_asignatura>/resultados-asistencia/', ver_resultados_asistencia, name='ver_resultados_asistencia'),
+    path('curso-asignatura/<int:id_curso_asignatura>/resultados-calificaciones/', ver_resultados_calificaciones, name='ver_resultados_calificaciones'),
+]

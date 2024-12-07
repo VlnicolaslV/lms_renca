@@ -1,0 +1,43 @@
+.curso-detalle-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabla-container {
+    overflow-x: auto;
+}
+
+.tabla-alumnos {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tabla-alumnos th,
+.tabla-alumnos td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.tabla-alumnos th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.tabla-alumnos tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

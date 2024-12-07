@@ -1,0 +1,26 @@
+.mis-notas-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.mis-notas-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.mis-notas-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mis-notas-container li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

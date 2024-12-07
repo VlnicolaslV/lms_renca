@@ -1,0 +1,44 @@
+.ver-curso-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.ver-curso-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ver-curso-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.ver-curso-main {
+    text-align: center;
+}
+
+.ver-curso-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.ver-curso-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ver-curso-button:hover {
+    background-color: #0056b3;
+}

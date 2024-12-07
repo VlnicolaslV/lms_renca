@@ -1,0 +1,71 @@
+/* Asegurar la especificidad con un selector de clase único */
+.Directores-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Directores-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.Directores-container .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10px;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.Directores-container .styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+}
+
+.Directores-container .styled-table th,
+.Directores-container .styled-table td {
+    padding: 8px 11px;
+}
+
+.Directores-container .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.Directores-container .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.Directores-container .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.Directores-container .styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.Directores-container .edit-button, .delete-button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.Directores-container .edit-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.Directores-container .delete-button {
+    background-color: #f44336;
+    color: white;
+}

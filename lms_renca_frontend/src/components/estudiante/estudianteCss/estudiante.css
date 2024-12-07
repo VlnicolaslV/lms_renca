@@ -1,0 +1,84 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.nav-bar {
+    background-color: #343a40;
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú */
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar li {
+    position: relative;
+    margin: 0 20px; /* Agrega separación entre los elementos del menú */
+}
+
+.nav-bar button {
+    padding: 10px 15px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar button:hover {
+    background-color: #495057;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #343a40;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000; /* Asegura que el submenú se muestre por encima de otros elementos */
+}
+
+.nav-bar li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu button {
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f7fc;
+    overflow-y: auto;
+}

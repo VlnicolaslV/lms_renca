@@ -1,0 +1,65 @@
+.ver-foros-container {
+    margin: 20px;
+}
+
+.foros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.foro-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.foro-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.foro-card .card-body {
+    padding: 20px;
+}
+
+.foro-card h5 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.foro-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.foro-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.foro-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.comentarios-section {
+    margin-top: 20px;
+}
+
+.comentario {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.comentario p {
+    margin: 5px 0;
+}
+
+.fecha-comentario {
+    font-size: 0.8em;
+    color: #888;
+}

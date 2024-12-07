@@ -1,0 +1,129 @@
+.dashboard-container-profesor {
+  display: grid;
+  grid-template-rows: 70px 1fr; /* Fila fija para el header, el resto para contenido */
+  grid-template-columns: 250px 1fr; /* Columna fija para el sidebar, el resto para contenido */
+  height: 100vh; 
+  width: 100vw;
+}
+
+.header {
+  grid-column: 1 / 3; /* El header ocupa ambas columnas */
+  display: flex;
+  justify-content: space-between; /* Alinea el contenido del header */
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.sidebar-profesor {
+  grid-row: 1 / 3;
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.menu-profesor ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-profesor li {
+  margin-bottom: 10px;
+}
+
+.menu-profesor button {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-profesor button:hover {
+  background-color: #495057;
+}
+
+.profesor-content {
+  grid-column: 2 / 3; 
+  padding: 20px;
+  background-color: #f4f7fc;
+  overflow-y: auto;
+  height: 100dvh;
+}
+
+.profesor-submenu {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.profesor-submenu li {
+  margin-bottom: 10px;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+  width: 100%; 
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+form label {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+form input, form select, form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 85%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 12px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  overflow: hidden;
+}
